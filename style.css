@@ -1,0 +1,94 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+#search-bar > div{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F7F5;
+    padding: 15px 0 15px 15px;
+    border-radius: 10px 0 0 10px;
+}
+#search-bar > div > input{
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+#search-bar > button{
+    font-size: 20px;
+    padding: 25px;
+    margin: 0;
+    border: none;
+    background-color:darkblue;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+#search-bar > div > img{
+    width: 30px;
+}
+#error-message{
+    text-align: center;
+    display: none;
+    color: tomato;
+}
+
+#search-results-area{
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+}
+@media (max-width: 600px){
+    #search-results-area{
+        grid-template-columns: repeat(1, 200px);
+    }
+}
+@media (min-width: 600px){
+    #search-results-area{
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+@media (min-width: 768px){
+    #search-results-area{
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+@media (min-width: 992px){
+    #search-results-area{
+        grid-template-columns: repeat(4, 200px);
+    }
+}
+#search-results-area > div{
+    background-color: #f1f1f1;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+#search-results-area > div > img{
+    width: 200px;
+    border-radius: 15px 15px 0 0;
+}
+#details-area{
+    display: none;
+}
+#details-area div{
+    width: max-content;
+    margin: 50px auto;
+}
+#details-area img{
+    width: 300px;
+    border-radius: 10px;
+}
+#details-area ul{
+    list-style: none;
+    padding: 0;
+}
